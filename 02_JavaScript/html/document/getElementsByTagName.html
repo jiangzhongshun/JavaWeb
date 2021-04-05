@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript">
+    //全选
+    function checkAll(){
+      //document.getElementsByTagName("input");是按照指定标签名进行查询并返回集合
+      //集合中都是dom对象
+      var inputs=document.getElementsByTagName("input");
+      for(var i=0;i<inputs.length;i++){
+        inputs[i].checked=true;
+      }
+    }
+
+
+  </script>
+</head>
+<body>
+兴趣爱好：
+<input type="checkbox" value="Java" checked="checked">Java
+<input type="checkbox" value="Python">Python
+<input type="checkbox" value="C++">C++
+<br>
+<button onclick="checkAll()">全选</button>
+
+
+</body>
+</html>

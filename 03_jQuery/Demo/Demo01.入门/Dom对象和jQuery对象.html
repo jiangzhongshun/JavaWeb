@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+  <script type="text/javascript">
+    $(function (){
+
+      // var arr=[12,'avc',true];
+      //
+      // var $btns=$("button");
+      //
+      // //jQuery对象是 don对象的数组+jQuery提供的一系列功能函数
+      //
+      // for(var i=0;i<$btns.length;i++){
+      //   alert($btns[i]);
+      // }
+      // document.getElementById("testDiv").innerHTML="这是dom对象的属性innerHTML";
+
+      // $("#testDiv").click(function () {
+      //   alert("click()是jQuery的方法");
+      // });
+
+
+
+      }
+    );
+
+    /*
+    dom对象转化为jQuery对象
+        1、现有DOM对象
+        2、$(DOM对象) 就可以转化为jQuery对象
+
+    jQuery对象转化为Dom对象
+        1、现有jQuery对象
+        2、jQuery对象下标取出相应的DOM对象
+     */
+
+  </script>
+</head>
+<body>
+<div id="testDiv">Good</div>
+<button id="dom2dom">使用dom对象调用dom方法</button>
+<button id="dom2jQuery">使用dom对象调用jQuery方法</button>
+<button id="jQuery2jQuery">使用jquery对象调用jQuery方法</button>
+<button id="jQuery2dom">使用jQuery对象调用dom方法</button>
+</body>
+</html>

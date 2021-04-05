@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>class类型选择器</title>
+  <style type="text/css">
+    .class01{
+      color: blue;
+      font-size: 30px;
+      border: 1px yellow solid;
+    }
+
+    .class02{
+      color: gray;
+      font-size: 26px;
+      border: 1px red solid;
+    }
+
+    /* 组合选择器 */
+    .class003,#id001{
+      color: blue;
+      font-size: 20px;
+      border: 1px yellow solid;
+    }
+
+
+    /*css常用样式*/
+    .class04{
+      color: red;
+      border: 1px yellow solid;
+      width: 300px;
+      height: 300px;
+      background-color: green;
+      font-size: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    a{
+      /*超链接去下划线*/
+      text-decoration: none;
+    }
+    table{
+      border: 1px red solid;
+      border-collapse: collapse; /*将边框合并*/
+    }
+    td{
+      border: 1px red solid;
+    }
+    ul{
+      list-style: none;  /*列表去除修饰*/
+    }
+
+  </style>
+</head>
+<body>
+
+<!--
+  修改class属性值为class01的span或div标签，字体颜色为蓝色，字体大小30px，边框为1像素黄色实线
+  修改class属性值为class02的div标签，字体颜色为灰色，字体大小26px，边框为1像素红色实线
+-->
+
+<div class="class01">div标签001</div>
+<div class="class02">div标签</div>
+<span class="class01">span标签class01</span>
+<span>span标签</span>
+
+
+<!--
+  组合选择器
+
+  修改class="class03"的div标签和id="id001"的所有span标签
+  字体颜色为蓝色，20px，边框1px黄色实线
+-->
+
+<div class="class003">div标签class03</div>
+<span id="id001">span标签</span>
+<div>div</div>
+<span>span</span>
+
+<div class="class04">div标签</div>
+
+<a href="http://www.baidu.com">百度</a>
+
+<table>
+  <tr>
+    <td>1.1</td>
+    <td>1.2</td>
+  </tr>
+</table>
+
+<ul>
+  <li>111</li>
+  <li>222</li>
+  <li>333</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript">
+
+    window.onload=function () {
+      //现在需要我们使用js代码来创建html标签，并显示在页面上
+      //标签的内容是：<div>Link</div>
+      var divObj=document.createElement("div");//在内存中<div></div>
+
+      var textObj=document.createTextNode("Link");
+
+      divObj.appendChild(textObj);
+
+      // divObj.innerHTML="Link";//<div>Link</div> 还是只在内存中
+      //添加子元素
+      document.body.appendChild(divObj);
+    }
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

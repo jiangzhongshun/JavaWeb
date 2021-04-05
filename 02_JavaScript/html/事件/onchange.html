@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript">
+    function onchangeFun(){
+      alert("语言已经改变");
+    }
+
+    window.onload=function (){
+      var selObj=document.getElementById("sel01");
+      selObj.onchange=function (){
+        alert("科目已经发生改变")
+      }
+    }
+  </script>
+</head>
+<body>
+  请选择语言：
+  <!--静态注册onchange事件-->
+<select onchange="onchangeFun()">
+  <option>Java</option>
+  <option>Python</option>
+  <option>Javascript</option>
+  <option>C++</option>
+</select>
+<br>
+
+  请选择科目：
+  <!--静态注册onchange事件-->
+<select id="sel01">
+  <option>计算机组成原理</option>
+  <option>数据结构</option>
+  <option>操作系统</option>
+  <option>编译原理</option>
+</select>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script type="text/javascript">
+    function a(){
+      var con=confirm("是否确定删除数据");
+      if(con){
+        alert("成功删除数据");
+      }
+      else {
+        alert("数据未删除");
+      }
+    }
+  </script>
+</head>
+<body>
+<!--
+通过<a>标签的onclick事件，实现弹出确认框和警告框。
+点击确定弹出消息“成功删除数据”，点击取消弹出消息“数据未删除”：
+-->
+<a href="#" onclick="a()">删除数据</a>
+</body>
+</html>

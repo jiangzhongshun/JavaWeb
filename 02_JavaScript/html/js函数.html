@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    //函数第一种定义形式
+
+    //定义一个无参函数
+    function fun(){
+      alert("无参函数被调用");
+    }
+    fun();//调用
+
+    function fun2(a,b){
+      alert("有参函数a="+a+",b="+b);
+    }
+    fun2(1,"fsdfsdf");
+
+    //定义带有返回值的函数
+    function fun3(num1,num2){
+      var result=num1+num2;
+      return result;
+    }
+    alert(fun3(100,50));
+
+    //函数第二种定义形式
+    //var 函数名=function(形参列表){函数体}
+    var fun4=function (){
+      alert("无参2222")
+    }
+    fun4();
+
+    var fun5=function (a,b){
+      alert("a="+a+",b="+b);
+    }
+    fun5(1,5);
+
+    //js中函数不允许重载
+    //后面的覆盖前面的
+    function fun11(){
+      alert("无参函数fun11()");
+    }
+    function fun11(a,b){
+      alert("有参函数fun11()")
+    }
+    fun11();
+
+    //隐形参数arguments
+    function fun6(){
+      //alert(arguments.length);//查看参数个数
+      alert(arguments[0]);
+      alert(arguments[1]);
+      alert(arguments[2]);
+    }
+    fun6(1,543,"ddss");
+
+    //编写一个函数用来计算所有参数相加的和并返回
+    function sum(num1,num2){
+      var result=0;
+      for(var i=0;i<arguments.length;i++){
+        if(typeof(arguments[i])=="number")//number类型才加
+          result+=arguments[i];
+      }
+      return result;
+    }
+    alert(sum(1,2,3,4,5,6,7));//28
+    //alert(sum(1,2,3,4,5,"bbbb",6,7));//15bbb67
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
