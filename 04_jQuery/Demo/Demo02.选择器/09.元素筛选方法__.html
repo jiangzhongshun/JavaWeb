@@ -14,17 +14,17 @@
 			    font-size: 17px;
 			    font-family: Verdana;
 			}
-
+			
 			div.mini {
-			    width: 55px;`
+			    width: 55px;
 			    height: 55px;
 			    background-color: #aaa;
 			    font-size: 12px;
 			}
-
+			
 			div.hide {
 			    display: none;
-			}
+			}			
 		</style>
 		<script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
 		<script type="text/javascript">
@@ -33,41 +33,41 @@
 					$("#mover").slideToggle("slow", anmateIt);
 				}
 				anmateIt();
-
+				
 	/**
-
+					
 	过滤
-	eq(index|-index)
-	first()
-	last()
-	hasClass(class)
-	filter(expr|obj|ele|fn)
-	is(expr|obj|ele|fn)1.6*
-	has(expr|ele)
-	not(expr|ele|fn)
-	slice(start,[end])
-
+	eq(index|-index) 			
+	first() 					
+	last() 						
+	hasClass(class) 			
+	filter(expr|obj|ele|fn) 	
+	is(expr|obj|ele|fn)1.6* 	
+	has(expr|ele) 				
+	not(expr|ele|fn) 			
+	slice(start,[end]) 			
+	
 	查找
-	children([expr])
-	closest(expr,[con]|obj|ele)1.6*
-	find(expr|obj|ele)
-	next([expr])
-	nextall([expr])
-	nextUntil([exp|ele][,fil])1.6*
-	parent([expr])
-	parents([expr])
-	parentsUntil([exp|ele][,fil])1.6*
-	prev([expr])
-	prevall([expr])
-	prevUntil([exp|ele][,fil])1.6*
-	siblings([expr])
-
+	children([expr]) 			
+	closest(expr,[con]|obj|ele)1.6*   
+	find(expr|obj|ele) 				
+	next([expr]) 					
+	nextall([expr]) 				
+	nextUntil([exp|ele][,fil])1.6* 	
+	parent([expr]) 					
+	parents([expr]) 				
+	parentsUntil([exp|ele][,fil])1.6*  
+	prev([expr]) 					
+	prevall([expr]) 				
+	prevUntil([exp|ele][,fil])1.6* 	
+	siblings([expr]) 				
+	
 	串联
-	add(expr|ele|html|obj[,con])
-
-
+	add(expr|ele|html|obj[,con]) 	
+							
+	
 	*/
-
+				
 				//(1)eq()  选择索引值为等于 3 的 div 元素
 				$("#btn1").click(function(){
 					$("div").eq(3).css("background-color","#bfa");
@@ -92,7 +92,7 @@
 				$("#btn5").click(function(){
 					alert( $("#one").is(":empty") );
 				});
-
+				
 				//(6)has()选择div中包含.mini的
 				$("#btn6").click(function(){
 					//has(selector)  选择器字符串    是否包含selector
@@ -108,8 +108,8 @@
 					//children()  选出所有的子元素
 					$("body").children("div.one").css("background-color","#bfa");
 				});
-
-
+				
+				
 				//(9)find()在body中选择所有class为mini的div元素
 				$("#btn9").click(function(){
 					//find()  选出所有的后代元素
@@ -136,7 +136,7 @@
 				});
 				//(14)prev() #two的上一个div
 				$("#btn14").click(function(){
-					//prev()
+					//prev()  
 					$("#two").prev("div").css("background-color","#bfa")
 				});
 				//(15)prevAll() span前面所有的div
@@ -154,24 +154,24 @@
 					//siblings()    找到所有的兄弟元素，包括前面的和后面的
 					$("#two").siblings().css("background-color","#bfa")
 				});
-
-
+				
+				
 				//(18)add()选择所有的 span 元素和id为two的元素
 				$("#btn18").click(function(){
-
+	
 					//   $("span,#two,.mini,#one")
 					$("span").add("#two").add("#one").css("background-color","#bfa");
-
+					
 				});
-
+				
 
 
 			});
-
-
+			
+			
 		</script>
 	</head>
-	<body>
+	<body>		
 		<input type="button" value="eq()选择索引值为等于 3 的 div 元素" id="btn1" />
 		<input type="button" value="first()选择第一个 div 元素" id="btn2" />
 		<input type="button" value="last()选择最后一个 div 元素" id="btn3" />
@@ -191,7 +191,7 @@
 		<input type="button" value="siblings()#two的所有兄弟元素" id="btn17" />
 		<input type="button" value="add()选择所有的 span 元素和id为two的元素" id="btn18" />
 
-
+		
 		<h3>基本选择器.</h3>
 		<br /><br />
 		文本框<input type="text" name="account" disabled="disabled" />
@@ -205,7 +205,7 @@
 			<div class="mini" title="other"><b>class为mini,title为other</b></div>
 			<div class="mini" title="test">class为mini,title为test</div>
 		</div>
-
+		
 		<div class="one">
 			<div class="mini">class为mini</div>
 			<div class="mini">class为mini</div>
