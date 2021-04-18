@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<books> <!--books表示多个图书信息-->
+  <book sn="SN12363546">  <!--book表示一个图书信息，sn表示图书序列号-->
+    <name>时间简史</name>
+    <author>霍金</author>
+    <price>75</price>
+  </book>
+  <book sn="SN56222315">  <!--book表示一个图书信息，sn表示图书序列号-->
+    <name>Java编程思想</name>
+    <author>Bruce Eckel</author>
+    <price>108</price>
+  </book>
+
+</books>
